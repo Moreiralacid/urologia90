@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="URO 90 — plataforma autoral de revisão para prova de Urologia: 28 aulas, 96 questões (60 amplas + 36 históricas AP2), 64 flashcards, 5 casos clínicos e simulado de 40 itens.">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("URO90_THEME");
+        var theme = (saved === "dark" || saved === "light") ? saved
+          : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute("content", theme === "dark" ? "#0b1220" : "#0f172a");
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <title>URO 90 · Reta final de Urologia</title>
+  <style>
+/*STYLES*/
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal"></aside>
+    <div class="main">
+      <header class="topbar" id="topbar"></header>
+      <main class="content" id="view"></main>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+  <div class="toast-wrap" id="toast-root" aria-live="polite"></div>
+
+<!--SCRIPTS-->
+</body>
+</html>
